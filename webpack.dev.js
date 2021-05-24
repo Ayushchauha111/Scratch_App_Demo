@@ -9,7 +9,7 @@ module.exports = merge([
     devServer: {
       contentBase: path.join(__dirname, "public"),
       compress: true,
-      port: 3000,
+      port: 3000 || process.env.PORT,
       historyApiFallback: true,
     },
   },
